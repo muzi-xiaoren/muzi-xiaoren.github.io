@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>你好，世界</title>
+      <link href="/2026/06/09/hello-world/"/>
+      <url>/2026/06/09/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到我的博客！这是用 <a href="https://hexo.io/">Hexo</a> + <a href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid</a> 主题搭建的个人站点。</p><h2 id="怎么写新文章"><a href="#怎么写新文章" class="headerlink" title="怎么写新文章"></a>怎么写新文章</h2><p>在博客源码目录运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;文章标题&quot;</span><br></code></pre></td></tr></table></figure><p>文章会生成在 <code>source/_posts/</code> 下，用 Markdown 编写即可。</p><h2 id="怎么发布"><a href="#怎么发布" class="headerlink" title="怎么发布"></a>怎么发布</h2><p>写完后运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy<br></code></pre></td></tr></table></figure><p>几分钟后刷新 <a href="https://muzi-xiaoren.github.io/">https://muzi-xiaoren.github.io</a> 就能看到更新。</p><h2 id="接下来"><a href="#接下来" class="headerlink" title="接下来"></a>接下来</h2><ul><li>改 <code>_config.yml</code> 里的站点标题、作者</li><li>改 <code>_config.fluid.yml</code> 里的头图、头像、社交链接</li><li>删掉这篇示例文章，开始写自己的内容吧 🎉</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
