@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>Pinwall 主题使用指南</title>
+      <link href="/2026/06/10/pinwall-guide/"/>
+      <url>/2026/06/10/pinwall-guide/</url>
+      
+        <content type="html"><![CDATA[<p>这篇文章演示 Pinwall 主题的便利贴自定义能力。每篇文章头部（front-matter）支持以下可选字段：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-06-10 19:30:00</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">/img/xxx.jpg</span>   <span class="comment"># 便利贴封面图（图片放 source/img/ 下）</span></span><br><span class="line"><span class="attr">pin_x:</span> <span class="number">60</span>             <span class="comment"># 手动定位：距板左侧的百分比（0-100）</span></span><br><span class="line"><span class="attr">pin_y:</span> <span class="number">80</span>             <span class="comment"># 手动定位：距板顶部的像素</span></span><br><span class="line"><span class="attr">rotate:</span> <span class="number">-3</span>            <span class="comment"># 固定旋转角度（度），不写则随机微倾</span></span><br><span class="line"><span class="attr">color:</span> <span class="string">&quot;#ffd9e8&quot;</span>      <span class="comment"># 便利贴纸色，不写则自动轮换</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><p>几条规则：</p><ul><li>不写 <code>pin_x</code> &#x2F; <code>pin_y</code> 的文章会自动瀑布流排版，<strong>永远不会和其他便利贴重叠</strong>；</li><li>手动定位的便利贴如果和别人撞上了，会自动向下让位；</li><li>鼠标悬停在便利贴上：摆正 + 缓慢晃动 + 水面波纹。</li></ul><h2 id="首页画廊"><a href="#首页画廊" class="headerlink" title="首页画廊"></a>首页画廊</h2><p>把图片丢进 <code>source/img/background/</code> 文件夹，重新生成即可出现在首页 3D 画廊里，无需任何配置。鼠标靠近哪张图，哪张就会平铺展开。</p><h2 id="右上角导航"><a href="#右上角导航" class="headerlink" title="右上角导航"></a>右上角导航</h2><p>编辑 <code>_config.pinwall.yml</code> 里的 <code>nav</code> 列表即可增删导航便利贴。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 站点 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>你好，世界</title>
       <link href="/2026/06/09/hello-world/"/>
       <url>/2026/06/09/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>欢迎来到我的博客！这是用 <a href="https://hexo.io/">Hexo</a> + <a href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid</a> 主题搭建的个人站点。</p><h2 id="怎么写新文章"><a href="#怎么写新文章" class="headerlink" title="怎么写新文章"></a>怎么写新文章</h2><p>在博客源码目录运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;文章标题&quot;</span><br></code></pre></td></tr></table></figure><p>文章会生成在 <code>source/_posts/</code> 下，用 Markdown 编写即可。</p><h2 id="怎么发布"><a href="#怎么发布" class="headerlink" title="怎么发布"></a>怎么发布</h2><p>写完后运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy<br></code></pre></td></tr></table></figure><p>几分钟后刷新 <a href="https://muzi-xiaoren.github.io/">https://muzi-xiaoren.github.io</a> 就能看到更新。</p><h2 id="接下来"><a href="#接下来" class="headerlink" title="接下来"></a>接下来</h2><ul><li>改 <code>_config.yml</code> 里的站点标题、作者</li><li>改 <code>_config.fluid.yml</code> 里的头图、头像、社交链接</li><li>删掉这篇示例文章，开始写自己的内容吧 🎉</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>欢迎来到我的博客！这是用 <a href="https://hexo.io/">Hexo</a> + <a href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid</a> 主题搭建的个人站点。</p><h2 id="怎么写新文章"><a href="#怎么写新文章" class="headerlink" title="怎么写新文章"></a>怎么写新文章</h2><p>在博客源码目录运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span></span><br></pre></td></tr></table></figure><p>文章会生成在 <code>source/_posts/</code> 下，用 Markdown 编写即可。</p><h2 id="怎么发布"><a href="#怎么发布" class="headerlink" title="怎么发布"></a>怎么发布</h2><p>写完后运行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure><p>几分钟后刷新 <a href="https://muzi-xiaoren.github.io/">https://muzi-xiaoren.github.io</a> 就能看到更新。</p><h2 id="接下来"><a href="#接下来" class="headerlink" title="接下来"></a>接下来</h2><ul><li>改 <code>_config.yml</code> 里的站点标题、作者</li><li>改 <code>_config.fluid.yml</code> 里的头图、头像、社交链接</li><li>删掉这篇示例文章，开始写自己的内容吧 🎉</li></ul>]]></content>
       
       
       <categories>

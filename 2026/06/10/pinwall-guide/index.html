@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinwall 主题使用指南 | 木子小忍的博客</title>
+  <meta name="description" content="个人博客 · 技术与生活">
+  <link rel="stylesheet" href="/css/main.css">
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body class="is-sub">
+
+  
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="waterRipple" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence id="waterTurb" type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="3" result="noise"/>
+        <feDisplacementMap id="waterDisp" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  
+  <header class="topbar">
+    <a class="topbar-title" href="/">木子小忍的博客</a>
+    <nav class="topbar-nav">
+      
+        <a href="/archives/">归档</a>
+      
+        <a href="/categories/">分类</a>
+      
+        <a href="/tags/">标签</a>
+      
+        <a href="/about/">关于</a>
+      
+    </nav>
+  </header>
+  
+
+  <main class="sheet-wrap">
+  <article class="sheet post">
+    <span class="pin big-pin" aria-hidden="true"></span>
+    <h1 class="sheet-title">Pinwall 主题使用指南</h1>
+    <div class="sheet-meta">
+      <time>2026年06月10日</time>
+      
+        <span>·</span>
+        
+          <a href="/categories/%E7%AB%99%E7%82%B9/">站点</a>
+        
+      
+    </div>
+    <div class="sheet-content"><p>这篇文章演示 Pinwall 主题的便利贴自定义能力。每篇文章头部（front-matter）支持以下可选字段：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-06-10 19:30:00</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">/img/xxx.jpg</span>   <span class="comment"># 便利贴封面图（图片放 source/img/ 下）</span></span><br><span class="line"><span class="attr">pin_x:</span> <span class="number">60</span>             <span class="comment"># 手动定位：距板左侧的百分比（0-100）</span></span><br><span class="line"><span class="attr">pin_y:</span> <span class="number">80</span>             <span class="comment"># 手动定位：距板顶部的像素</span></span><br><span class="line"><span class="attr">rotate:</span> <span class="number">-3</span>            <span class="comment"># 固定旋转角度（度），不写则随机微倾</span></span><br><span class="line"><span class="attr">color:</span> <span class="string">&quot;#ffd9e8&quot;</span>      <span class="comment"># 便利贴纸色，不写则自动轮换</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>几条规则：</p>
+<ul>
+<li>不写 <code>pin_x</code> &#x2F; <code>pin_y</code> 的文章会自动瀑布流排版，<strong>永远不会和其他便利贴重叠</strong>；</li>
+<li>手动定位的便利贴如果和别人撞上了，会自动向下让位；</li>
+<li>鼠标悬停在便利贴上：摆正 + 缓慢晃动 + 水面波纹。</li>
+</ul>
+<h2 id="首页画廊"><a href="#首页画廊" class="headerlink" title="首页画廊"></a>首页画廊</h2><p>把图片丢进 <code>source/img/background/</code> 文件夹，重新生成即可出现在首页 3D 画廊里，无需任何配置。鼠标靠近哪张图，哪张就会平铺展开。</p>
+<h2 id="右上角导航"><a href="#右上角导航" class="headerlink" title="右上角导航"></a>右上角导航</h2><p>编辑 <code>_config.pinwall.yml</code> 里的 <code>nav</code> 列表即可增删导航便利贴。</p>
+</div>
+    
+    <div class="sheet-tags">
+      
+        <a class="tag-chip" href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
+      
+    </div>
+    
+  </article>
+  <nav class="post-nav">
+    <span></span>
+    <a class="pager-note" href="/2026/06/09/hello-world/">你好，世界 →</a>
+  </nav>
+</main>
+
+
+  <footer class="site-footer">
+    <span>© 2026 muzi-xiaoren · Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> · Theme Pinwall</span>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
