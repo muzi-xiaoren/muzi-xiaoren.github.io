@@ -1,85 +1,28 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pinwall 主题使用指南 | 木子小忍的博客</title>
-  <meta name="description" content="个人博客 · 技术与生活">
-  <link rel="stylesheet" href="/css/main.css">
-<meta name="generator" content="Hexo 8.1.2"></head>
-<body class="is-sub bs-dark">
-
-  
-  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
-    <defs>
-      <filter id="waterRipple" x="-20%" y="-20%" width="140%" height="140%">
-        <feTurbulence id="waterTurb" type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="3" result="noise"/>
-        <feDisplacementMap id="waterDisp" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-    </defs>
-  </svg>
-
-  
-  <header class="topbar">
-    <a class="topbar-title" href="/">木子小忍的博客</a>
-    <nav class="topbar-nav">
-      
-        <a href="/archives/">归档</a>
-      
-        <a href="/categories/">分类</a>
-      
-        <a href="/tags/">标签</a>
-      
-        <a href="/about/">关于</a>
-      
-    </nav>
-  </header>
-  
-
-  <main class="sheet-wrap">
-  <article class="sheet post">
-    <span class="pin big-pin" aria-hidden="true"></span>
-    <h1 class="sheet-title">Pinwall 主题使用指南</h1>
-    <div class="sheet-meta">
-      <time>2026年06月10日</time>
-      
-        <span>·</span>
-        
-          <a href="/categories/%E7%AB%99%E7%82%B9/">站点</a>
-        
-      
-    </div>
-    <div class="sheet-content"><p>这篇文章演示 Pinwall 主题的便利贴自定义能力。每篇文章头部（front-matter）支持以下可选字段：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-06-10 19:30:00</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">/img/xxx.jpg</span>   <span class="comment"># 便利贴封面图（图片放 source/img/ 下）</span></span><br><span class="line"><span class="attr">pin_x:</span> <span class="number">60</span>             <span class="comment"># 手动定位：距板左侧的百分比（0-100）</span></span><br><span class="line"><span class="attr">pin_y:</span> <span class="number">80</span>             <span class="comment"># 手动定位：距板顶部的像素</span></span><br><span class="line"><span class="attr">rotate:</span> <span class="number">-3</span>            <span class="comment"># 固定旋转角度（度），不写则随机微倾</span></span><br><span class="line"><span class="attr">color:</span> <span class="string">&quot;#ffd9e8&quot;</span>      <span class="comment"># 便利贴纸色，不写则自动轮换</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>站点使用指南 · 木子小忍的博客</title><meta name="description" content="封面、摘要、草稿和首页藏品，这个站点的几条约定都在这里。"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://muzi-xiaoren.github.io/2026/06/10/pinwall-guide/"><link rel="stylesheet" href="/_astro/Base.Btvz_m3P.css"><style>.post[data-astro-cid-yuursof3]{grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:32px 48px;padding:48px 0 72px;display:grid}.meta[data-astro-cid-yuursof3] dl[data-astro-cid-yuursof3]{font-family:var(--mono);flex-direction:column;gap:14px;margin:0;display:flex;position:sticky;top:24px}.meta[data-astro-cid-yuursof3] div[data-astro-cid-yuursof3]{border-top:1px solid var(--ink);flex-direction:column;gap:2px;padding-top:8px;display:flex}.meta[data-astro-cid-yuursof3] dt[data-astro-cid-yuursof3]{color:var(--mute);letter-spacing:.06em;font-size:11px}.meta[data-astro-cid-yuursof3] dd[data-astro-cid-yuursof3]{flex-wrap:wrap;gap:4px 10px;margin:0;font-size:13px;display:flex}.meta[data-astro-cid-yuursof3] a[data-astro-cid-yuursof3]{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}.main[data-astro-cid-yuursof3]{min-width:0}h1[data-astro-cid-yuursof3]{letter-spacing:-.02em;text-wrap:balance;max-width:18em;margin:0;font-size:clamp(34px,5vw,60px);font-weight:600;line-height:1.2}.lede[data-astro-cid-yuursof3]{max-width:34em;color:var(--mute);margin:20px 0 0;font-size:20px;line-height:1.7}.cover[data-astro-cid-yuursof3]{max-width:900px;margin:36px 0 0}.cover[data-astro-cid-yuursof3] img[data-astro-cid-yuursof3]{border:1px solid var(--ink);width:100%;height:auto;display:block}.cover[data-astro-cid-yuursof3] img[data-astro-cid-yuursof3].contain{background:#fff}.cover[data-astro-cid-yuursof3] figcaption[data-astro-cid-yuursof3]{color:var(--mute);margin-top:8px;font-size:11px}.prose[data-astro-cid-yuursof3]{margin-top:44px}.post-nav[data-astro-cid-yuursof3]{border-top:1px solid var(--ink);grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));display:grid}.post-nav[data-astro-cid-yuursof3] a[data-astro-cid-yuursof3]{flex-direction:column;gap:6px;min-height:88px;padding:20px 12px;transition:background-color .15s,color .15s;display:flex}.post-nav[data-astro-cid-yuursof3] a[data-astro-cid-yuursof3]:hover,.post-nav[data-astro-cid-yuursof3] a[data-astro-cid-yuursof3]:focus-visible{background:var(--ink);color:var(--paper)}.post-nav[data-astro-cid-yuursof3] a[data-astro-cid-yuursof3]:hover .mute[data-astro-cid-yuursof3],.post-nav[data-astro-cid-yuursof3] a[data-astro-cid-yuursof3]:focus-visible .mute[data-astro-cid-yuursof3]{color:var(--rule)}.post-nav[data-astro-cid-yuursof3] .newer[data-astro-cid-yuursof3]{text-align:right;align-items:flex-end}.nav-title[data-astro-cid-yuursof3]{font-size:18px;font-weight:500}@media (width<=760px){.post[data-astro-cid-yuursof3]{grid-template-columns:minmax(0,1fr);padding-top:32px}.meta[data-astro-cid-yuursof3] dl[data-astro-cid-yuursof3]{flex-flow:wrap;gap:10px 20px;position:static}.meta[data-astro-cid-yuursof3] div[data-astro-cid-yuursof3]{border-top:0;padding-top:0}}
+</style></head><body><div class="page"><header class="site-header" data-astro-cid-nen7h5rs><a class="cell" href="/" data-astro-cid-nen7h5rs><span class="name" data-astro-cid-nen7h5rs>木子小忍</span><span class="mono small mute" data-astro-cid-nen7h5rs>Muzi Xiaoren</span></a><span class="cell" data-astro-cid-nen7h5rs><span data-astro-cid-nen7h5rs>个人档案馆</span><span class="mute" data-astro-cid-nen7h5rs>笔记、照片与代码</span></span><nav class="nav" aria-label="主导航" data-astro-cid-nen7h5rs><a href="/archives/" data-astro-cid-nen7h5rs><span class="mono small mute" data-astro-cid-nen7h5rs>01</span>归档</a><a href="/categories/" data-astro-cid-nen7h5rs><span class="mono small mute" data-astro-cid-nen7h5rs>02</span>分类</a><a href="/tags/" data-astro-cid-nen7h5rs><span class="mono small mute" data-astro-cid-nen7h5rs>03</span>标签</a><a href="/about/" data-astro-cid-nen7h5rs><span class="mono small mute" data-astro-cid-nen7h5rs>04</span>关于</a></nav><span class="cell mono small" data-astro-cid-nen7h5rs><span data-astro-cid-nen7h5rs>上海 · GMT+8</span><span class="mute" data-astro-cid-nen7h5rs>更新于 2026.06.10</span></span><span class="count mono small" data-astro-cid-nen7h5rs><span class="square" data-astro-cid-nen7h5rs></span>N° 002</span></header><main><article class="post" data-astro-cid-yuursof3><aside class="meta" aria-label="文章信息" data-astro-cid-yuursof3><dl data-astro-cid-yuursof3><div data-astro-cid-yuursof3><dt data-astro-cid-yuursof3>No.</dt><dd data-astro-cid-yuursof3>002</dd></div><div data-astro-cid-yuursof3><dt data-astro-cid-yuursof3>日期</dt><dd data-astro-cid-yuursof3>2026.06.10</dd></div><div data-astro-cid-yuursof3><dt data-astro-cid-yuursof3>分类</dt><dd data-astro-cid-yuursof3><a href="/categories/站点/" data-astro-cid-yuursof3>站点</a></dd></div><div data-astro-cid-yuursof3><dt data-astro-cid-yuursof3>标签</dt><dd data-astro-cid-yuursof3><a href="/tags/教程/" data-astro-cid-yuursof3>教程</a></dd></div><div data-astro-cid-yuursof3><dt data-astro-cid-yuursof3>字数</dt><dd data-astro-cid-yuursof3>235</dd></div><div data-astro-cid-yuursof3><dt data-astro-cid-yuursof3>阅读</dt><dd data-astro-cid-yuursof3>约 1 分钟</dd></div></dl></aside><div class="main" data-astro-cid-yuursof3><h1 data-astro-cid-yuursof3>站点使用指南</h1><p class="lede" data-astro-cid-yuursof3>封面、摘要、草稿和首页藏品，这个站点的几条约定都在这里。</p><figure class="cover" data-astro-cid-yuursof3><img class="contain" src="/img/derived/background/photo_2026-04-04_11-45-15.webp" alt="" decoding="async" data-astro-cid-yuursof3><figcaption class="mono" data-astro-cid-yuursof3>COVER · No.002</figcaption></figure><div class="prose" data-astro-cid-yuursof3><p>这个站点最早用的是自制的 Pinwall 便利贴主题，2026 年 10 月改成了现在的档案馆样式。这篇文章记录新样式下的几条约定。</p>
+<h2 id="文章头部">文章头部</h2>
+<p>每篇文章开头的 front-matter 支持这些字段：</p>
+<pre class="astro-code github-light" style="background-color:#fff;color:#24292e; overflow-x: auto;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#6F42C1">---</span></span>
+<span class="line"><span style="color:#22863A">title</span><span style="color:#24292E">: </span><span style="color:#032F62">文章标题</span></span>
+<span class="line"><span style="color:#22863A">date</span><span style="color:#24292E">: </span><span style="color:#005CC5">2026-10-04 20:00:00</span><span style="color:#6A737D">   # 按上海时间写</span></span>
+<span class="line"><span style="color:#22863A">tags</span><span style="color:#24292E">: [</span><span style="color:#032F62">随笔</span><span style="color:#24292E">]                </span><span style="color:#6A737D"># 一个或多个标签</span></span>
+<span class="line"><span style="color:#22863A">categories</span><span style="color:#24292E">: [</span><span style="color:#032F62">日记</span><span style="color:#24292E">]          </span><span style="color:#6A737D"># 取第一个作为分类，不写则为「未分类」</span></span>
+<span class="line"><span style="color:#22863A">cover</span><span style="color:#24292E">: </span><span style="color:#032F62">/img/xxx.jpg</span><span style="color:#6A737D">         # 可选：封面，图片放 public/img/ 下</span></span>
+<span class="line"><span style="color:#22863A">excerpt</span><span style="color:#24292E">: </span><span style="color:#032F62">一句话摘要</span><span style="color:#6A737D">          # 可选：显示在标题下方</span></span>
+<span class="line"><span style="color:#22863A">draft</span><span style="color:#24292E">: </span><span style="color:#005CC5">true</span><span style="color:#6A737D">                 # 可选：草稿，只在本地预览时出现</span></span>
+<span class="line"><span style="color:#6F42C1">---</span></span></code></pre>
 <p>几条规则：</p>
 <ul>
-<li>不写 <code>pin_x</code> &#x2F; <code>pin_y</code> 的文章会自动瀑布流排版，<strong>永远不会和其他便利贴重叠</strong>；</li>
-<li>手动定位的便利贴如果和别人撞上了，会自动向下让位；</li>
-<li>鼠标悬停在便利贴上：摆正 + 缓慢晃动 + 水面波纹。</li>
+<li>文章按发布时间从 <strong>001</strong> 开始编号，新文章排在索引最上面；</li>
+<li>链接格式是 <code>/年/月/日/文件名/</code>，由 <code>date</code> 和文件名决定，发布后尽量不要再改；</li>
+<li>有封面的文章，在首页索引里悬停那一行会浮出封面预览。</li>
 </ul>
-<h2 id="首页画廊"><a href="#首页画廊" class="headerlink" title="首页画廊"></a>首页画廊</h2><p>把图片丢进 <code>source/img/background/</code> 文件夹，重新生成即可出现在首页 3D 画廊里，无需任何配置。鼠标靠近哪张图，哪张就会平铺展开。</p>
-<h2 id="右上角导航"><a href="#右上角导航" class="headerlink" title="右上角导航"></a>右上角导航</h2><p>编辑 <code>_config.pinwall.yml</code> 里的 <code>nav</code> 列表即可增删导航便利贴。</p>
-</div>
-    
-    <div class="sheet-tags">
-      
-        <a class="tag-chip" href="/tags/%E6%95%99%E7%A8%8B/"># 教程</a>
-      
-    </div>
-    
-  </article>
-  <nav class="post-nav">
-    <span></span>
-    <a class="pager-note" href="/2026/06/09/hello-world/">你好，世界 →</a>
-  </nav>
-</main>
-
-
-  <footer class="site-footer">
-    <span>© 2026 muzi-xiaoren · Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> · Theme Pinwall</span>
-  </footer>
-
-  <script src="/js/main.js"></script>
-</body>
-</html>
+<h2 id="首页藏品">首页藏品</h2>
+<p>把图片放进 <code>public/img/background/</code>，重新生成后就会出现在首页的「藏品」区：</p>
+<ul>
+<li>构建时自动生成 1-bit 抖动版，平时只加载这张很小的图，悬停时才换成彩色原图；</li>
+<li>编号按文件名排序，日期取文件名里的 <code>YYYY-MM-DD</code>。</li>
+</ul>
+<h2 id="改站点信息">改站点信息</h2>
+<p>站点标题、简介、导航和社交链接都在 <code>src/site.ts</code>，关于页是 <code>src/pages/about.md</code>。</p>
+</div></div></article><nav class="post-nav" aria-label="上一篇和下一篇" data-astro-cid-yuursof3><a href="/2026/06/09/hello-world/" data-astro-cid-yuursof3><span class="mono small mute" data-astro-cid-yuursof3>← 上一篇 · No.001</span><span class="nav-title" data-astro-cid-yuursof3>你好，世界</span></a></nav></main><footer class="site-footer" data-astro-cid-jo6i4kqk><div data-astro-cid-jo6i4kqk><span class="label" data-astro-cid-jo6i4kqk>版本说明 COLOPHON</span><span data-astro-cid-jo6i4kqk>© 2026 muzi-xiaoren</span></div><div data-astro-cid-jo6i4kqk><span class="label" data-astro-cid-jo6i4kqk>字体 TYPE</span><span data-astro-cid-jo6i4kqk>Instrument Sans · IBM Plex Mono · 系统中文字体</span></div><div data-astro-cid-jo6i4kqk><span class="label" data-astro-cid-jo6i4kqk>图像 IMAGES</span><span data-astro-cid-jo6i4kqk>1-bit 抖动，原图按需加载</span></div><div data-astro-cid-jo6i4kqk><span class="label" data-astro-cid-jo6i4kqk>联系 ELSEWHERE</span><span class="links" data-astro-cid-jo6i4kqk><a href="https://github.com/muzi-xiaoren" target="_blank" rel="noopener" data-astro-cid-jo6i4kqk>GitHub</a><a href="https://space.bilibili.com/185513864" target="_blank" rel="noopener" data-astro-cid-jo6i4kqk>哔哩哔哩</a><a href="https://bangumi.tv/user/renyeren" target="_blank" rel="noopener" data-astro-cid-jo6i4kqk>Bangumi</a></span></div></footer></div></body></html>
